@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShaheDevra | Student Result</title>
+
+    <!-- 
+    -link favicon image
+    -->
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+
+
+    <!-- 
+    -link custom css file
+     -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive/mobileView.css">
+
+    <!-- 
+    --box icons cdn link
+     -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+
+    <!-- 
+    -main container
+     -->
+    <div class="main_container">
+        <!-- 
+        --form container
+         -->
+        <form action="./assets/php/result.php" method="POST">
+            <!-- 
+            --form header
+             -->
+            <div class="form_header">
+                <img src="./assets/logo.svg" alt="ShaheDevra" width="130" class="logo">
+                <p>
+                    এই ফর্মটি শিক্ষার্থীদের বিভিন্ন বিষয়ের নম্বর সংগ্রহের জন্য তৈরি করা হয়েছে। সঠিকভাবে সমস্ত তথ্য পূরণ করে আপনার ফলাফল দেখতে পারেন।
+                </p>
+                <hr>          
+            </div>
+
+            <!-- 
+            --form content
+             -->
+            <div class="form_container">
+                <h2 class="form_head">শিক্ষার্থীর ফলাফল জমা দিন</h2>
+
+            <!-- 
+            --input boxses
+             -->
+                <div class="input_boxes">
+                    <!-- 
+                    --input group
+                    -->
+                    <div class="input_group">
+                        <label for="name"><i class='bx bx-user' ></i> শিক্ষার্থীর নাম: <span>*</span> </label>
+                        <!-- 
+                        --input text
+                        -->
+                        <div class="input_text">
+                            <input type="text" name="student_name" id="name" placeholder="শিক্ষার্থীর নাম (বাংলায়)" required><br>
+                            <small>সম্পূর্ণ নাম (বাংলায়)</small>
+                        </div>
+                    </div>
+
+
+                    <!-- 
+                    --input grid
+                    -->
+                    <div class="input_grid">
+                        <!-- 
+                        --input group
+                        -->
+                        <div class="input_group">
+                            <label for="english"><i class='bx bx-abacus' ></i> ইংরেজি নম্বর: <span>*</span></label>
+                            <!-- 
+                            --input text
+                            -->
+                            <div class="input_text">
+                                <input type="number" name="english_number" id="english" placeholder="ইংরেজি নম্বর" required><br>
+                                <small>ইংরেজি নম্বর</small>
+                            </div>
+                        </div>
+
+                        <!-- 
+                        --input group
+                        -->
+                        <div class="input_group">
+                            <label for="bengali"><i class='bx bx-pen' ></i> বাংলা নম্বর: <span>*</span></label>
+                            <!-- 
+                            --input text
+                            -->
+                            <div class="input_text">
+                                <input type="number" name="bengali_number" id="bengali" placeholder="বাংলা নম্বর" required><br>
+                                <small>বাংলা নম্বর</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <!-- --------------------------- -->
+                    <!-- 
+                    --second grid
+                    -->
+
+                    <!-- 
+                    --input grid
+                    -->
+                    <div class="input_grid">
+                        <!-- 
+                        --input group
+                        -->
+                        <div class="input_group">
+                            <label for="math"><i class='bx bx-math' ></i> গণিত নম্বর: <span>*</span></label>
+                            <!-- 
+                            --input text
+                            -->
+                            <div class="input_text">
+                                <input type="number" name="math_number" id="math" placeholder="গণিত নম্বর" required><br>
+                                <small>গণিত নম্বর</small>
+                            </div>
+                        </div>
+
+                        <!-- 
+                        --input group
+                        -->
+                        <div class="input_group">
+                            <label for="physics"><i class='bx bx-shape-polygon' ></i> পদার্থবিজ্ঞান নম্বর: <span>*</span></label>
+                            <!-- 
+                            --input text
+                            -->
+                            <div class="input_text">
+                                <input type="number" name="physics_number" id="physics" placeholder="পদার্থবিজ্ঞান নম্বর" required><br>
+                                <small>পদার্থবিজ্ঞান নম্বর</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- --------------------------------- -->
+                    <!-- 
+                    -- third grid
+                    -->
+                    <!-- 
+                    --input grid
+                    -->
+                    <div class="input_grid">
+                        <!-- 
+                        --input group
+                        -->
+                        <div class="input_group">
+                            <label for="chemistry"><i class='bx bx-test-tube'></i> রসায়ন নম্বর: <span>*</span></label>
+                            <!-- 
+                            --input text
+                            -->
+                            <div class="input_text">
+                                <input type="number" name="chemistry_number" id="chemistry" placeholder="রসায়ন নম্বর" required><br>
+                                <small>রসায়ন নম্বর</small>
+                            </div>
+                        </div>
+
+                        <!-- 
+                        --input group
+                        -->
+                        <div class="input_group">
+                            <label for="ict"><i class='bx bx-code-block' ></i> আইসিটি নম্বর: <span>*</span></label>
+                            <!-- 
+                            --input text
+                            -->
+                            <div class="input_text">
+                                <input type="number" name="ict_number" id="ict" placeholder="আইসিটি নম্বর" required><br>
+                                <small>আইসিটি নম্বর</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ------------------------------- -->
+
+                    <!-- 
+                    -- fourth grid
+                    -->
+                    <!-- 
+                    --input grid
+                    -->
+                    <div class="input_grid">
+                        <!-- 
+                        --input group
+                        -->
+                        <div class="input_group">
+                            <label for="religion"><i class='bx bx-street-view'></i> ধর্ম নম্বর: <span>*</span></label>
+                            <!-- 
+                            --input text
+                            -->
+                            <div class="input_text">
+                                <input type="number" name="religion_number" id="religion" placeholder="ধর্ম নম্বর" required><br>
+                                <small>ধর্ম নম্বর</small>
+                            </div>
+                        </div>
+
+                        <!-- 
+                        --input group
+                        -->
+                        <div class="input_group">
+                            <label for="agriculture"><i class='bx bx-cable-car'></i> কৃষিশিক্ষা নম্বর: <span>*</span></label>
+                            <!-- 
+                            --input text
+                            -->
+                            <div class="input_text">
+                                <input type="number" name="agriculture_number" id="agriculture" placeholder="কৃষিশিক্ষা নম্বর" required><br>
+                                <small>কৃষিশিক্ষা নম্বর</small>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- 
+                -- submit button
+                -->
+                <div class="submitbtn">
+                    <button>সাবমিট <i class='bx bx-paper-plane'></i></button>
+                </div>
+            </div>
+
+        </form>
+
+        <div class="footer">
+            <span>&copy; 2024 ShaheDevra - Developed By <strong>AL Shahed Bishwas.</strong></span>
+            <div class="social">
+                <li>
+                    <a href="https://www.facebook.com/alshahedbiswas" target="_blank" rel="noopener noreferrer"><i class='bx bxl-facebook-circle'></i></a>
+                </li>
+
+                <li>
+                    <a href="https://www.instagram.com/alshahed_biswas/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram' ></i></a>
+                </li>
+
+                <li>
+                    <a href="https://x.com/_shahed2008" target="_blank" rel="noopener noreferrer"><i class='bx bxl-twitter'></i></a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/shahed2008" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github' ></i></a>
+                </li>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

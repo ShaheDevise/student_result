@@ -1,0 +1,10 @@
+@media (max-width: 461px) {
+    .input_boxes .input_grid {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 1rem;
+    }
+
+    .main_container form {
+        padding: 0.5rem;
+    }
+}
